@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+  --background-color: #09192f;
+  --font-color: #c2ccec;
+  --special-color: #56bfde;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* #c2ccec navbar anchor tags */
+
+/* #c2ccec name h1  */
+
+/* I am a front end #8892b0 */
+/* #56bfde blue */
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  font-family: 'Cutive Mono', monospace, sans-serif;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'open', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
 }
