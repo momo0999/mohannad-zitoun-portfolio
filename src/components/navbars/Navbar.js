@@ -4,6 +4,7 @@ import Hamburger from 'hamburger-react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <div className='navbar'>
       <div className='navbar__header'>
