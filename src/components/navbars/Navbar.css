@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 .navbar {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  height: 70px;
+  min-height: 8vh;
   width: 100%;
+  padding: 0 20px;
 }
 
 .navbar__nav-number {
   color: var(--special-color);
-  padding-right: 10px;
+  padding: 10px;
   font-weight: 600;
 }
 
-.navbar__nav {
-  padding-right: 20px;
+.navbar__header a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .navbar__nav > ul {
@@ -25,9 +29,9 @@
 }
 
 .navbar__nav > ul li a {
-  margin-left: 30px;
   color: #c2ccec;
   transition: color 0.2s ease-in;
+  margin-left: 10px;
 }
 
 .navbar__nav-resume {
@@ -53,11 +57,46 @@
   transform: scale(1.04);
 }
 
+.navbar__hamburger {
+  border: none;
+  background-color: transparent;
+  color: #56bfde;
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
-  .navbar {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar__nav > ul {
+    position: absolute;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    font-size: 20px;
+    background-color: #162944;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in, width 0.3s ease-in;
+  }
+  .navbar__hamburger {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 10px;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .active {
+    transform: translateX(0%) !important;
+    width: 50%;
+    transition: transform 0.4s ease-in, width 0.1 s ease-in;
+  }
+  .inactive {
+    width: 0;
+    transform: translateX(0%);
   }
 }
