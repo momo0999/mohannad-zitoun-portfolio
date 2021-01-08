@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-:root {
-  --background-color: #09192f;
-  --font-color: #c2ccec;
-  --special-color: #56bfde;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,15 +9,9 @@
   scroll-behavior: smooth;
 }
 
-/* #c2ccec navbar anchor tags */
-
-/* #c2ccec name h1  */
-
-/* I am a front end #8892b0 */
-/* #56bfde blue */
 body {
-  background-color: var(--background-color);
-  color: var(--font-color);
+  background-color: #09192f;
+  color: #c2ccec;
 }
 
 a {

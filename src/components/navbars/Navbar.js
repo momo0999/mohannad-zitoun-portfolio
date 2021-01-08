@@ -1,49 +1,53 @@
 import React, { useState } from 'react';
-import './Navbar.css';
 import Hamburger from 'hamburger-react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false);
 
   return (
     <div className='navbar'>
       <div className='navbar__header'>
-        <a href='#'>
+        <Link to='#'>
           <img
             src='https://images.unsplash.com/photo-1609252871434-4e282b868d9a?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
             alt='My Image'
           />
-        </a>
+        </Link>
       </div>
-      <button onClick={() => setOpen(!open)} className='navbar__hamburger'>
+      <button
+        onClick={() => setOpenHamburgerMenu(!openHamburgerMenu)}
+        className='navbar__hamburger'
+      >
         <Hamburger />
       </button>
       <div className='navbar__nav'>
-        <ul className={`${open ? 'active' : 'inactive'} `}>
+        <ul className={`${openHamburgerMenu ? 'active' : 'inactive'} `}>
           <li>
-            <a href='#home'>
+            <Link to='#home'>
               <span className='navbar__nav-number'>01.</span>Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='#about'>
+            <Link to='#about'>
               <span className='navbar__nav-number'>02.</span>About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='#projects'>
+            <Link to='#projects'>
               <span className='navbar__nav-number'>03.</span>Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='#contact'>
+            <Link to='#contact'>
               <span className='navbar__nav-number'>04.</span>contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a className='navbar__nav-resume' href='#'>
+            <Link className='navbar__nav-resume' to='#'>
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

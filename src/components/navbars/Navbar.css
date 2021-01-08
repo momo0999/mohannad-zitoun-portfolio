@@ -5,11 +5,11 @@
   align-items: center;
   min-height: 8vh;
   width: 100%;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .navbar__nav-number {
-  color: var(--special-color);
+  color: #56bfde;
   padding: 10px;
   font-weight: 600;
 }
@@ -88,12 +88,12 @@
     justify-content: space-between;
     z-index: 1;
   }
-  .active {
+  .navbar .active {
     transform: translateX(0) !important;
     width: 50%;
     transition: transform 0.4s ease-in, width 0.1 s ease-in;
   }
-  .inactive {
+  .navbar .inactive {
     width: 0;
     transform: translateX(0%);
   }
