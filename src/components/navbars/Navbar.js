@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='navbar__header'>
-        <Link to='#'>
+        <Link to='/'>
           <img
             src='https://images.unsplash.com/photo-1609252871434-4e282b868d9a?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
             alt='My Image'
@@ -23,25 +23,25 @@ const Navbar = () => {
         <Hamburger />
       </button>
       <div className='navbar__nav'>
-        <ul className={`${openHamburgerMenu ? 'active' : 'inactive'} `}>
+        <ul className={`${openHamburgerMenu ? 'open' : 'close'} `}>
           <li>
-            <Link to='#home'>
+            <Link to='/'>
               <span className='navbar__nav-number'>01.</span>Home
             </Link>
           </li>
           <li>
-            <Link to='#about'>
+            <Link to='/about'>
               <span className='navbar__nav-number'>02.</span>About
             </Link>
           </li>
           <li>
-            <Link to='#projects'>
+            <Link to='/projects'>
               <span className='navbar__nav-number'>03.</span>Projects
             </Link>
           </li>
           <li>
-            <Link to='#contact'>
-              <span className='navbar__nav-number'>04.</span>contact
+            <Link to='/contact'>
+              <span className='navbar__nav-number'>04.</span>Contact
             </Link>
           </li>
           <li>
