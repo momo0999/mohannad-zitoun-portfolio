@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false);
+  const ref = useRef();
+  useEffect(() => {
+    const hamburgerMenu = document.querySelector('#hamburgerMenu');
+    const onBodyClick = (e) => {
+      if (
+        (ref.current && ref.current.contains(e.target)) ||
+        e.target === hamburgerMenu
+      ) {
+        return;
+      }
+      setOpenHamburgerMenu(false);
+    };
+    document.body.addEventListener('click', onBodyClick);
+    return () => {
+      document.body.removeEventListener('clicl', onBodyClick);
+    };
+  }, []);
 
   return (
     <div className='navbar'>
@@ -17,13 +34,18 @@ const Navbar = () => {
         </Link>
       </div>
       <button
+        ref={ref}
+        id='hamburger-btn'
         onClick={() => setOpenHamburgerMenu(!openHamburgerMenu)}
         className='navbar__hamburger'
       >
-        <Hamburger />
+        <Hamburger toggled={openHamburgerMenu} toggle={setOpenHamburgerMenu} />
       </button>
       <div className='navbar__nav'>
-        <ul className={`${openHamburgerMenu ? 'open' : 'close'} `}>
+        <ul
+          id='hamburgerMenu'
+          className={`${openHamburgerMenu ? 'open' : 'close'} `}
+        >
           <li>
             <Link to='/'>
               <span className='navbar__nav-number'>01.</span>Home
