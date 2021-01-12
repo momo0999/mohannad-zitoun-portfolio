@@ -19,7 +19,7 @@ const Navbar = () => {
     };
     document.body.addEventListener('click', onBodyClick);
     return () => {
-      document.body.removeEventListener('clicl', onBodyClick);
+      document.body.removeEventListener('click', onBodyClick);
     };
   }, []);
 
@@ -35,7 +35,6 @@ const Navbar = () => {
       </div>
       <button
         ref={ref}
-        id='hamburger-btn'
         onClick={() => setOpenHamburgerMenu(!openHamburgerMenu)}
         className='navbar__hamburger'
       >
