@@ -6,12 +6,12 @@ import './Navbar.css';
 const Navbar = () => {
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false);
   const ref = useRef();
+  const menuRef = useRef();
   useEffect(() => {
-    const hamburgerMenu = document.querySelector('#hamburgerMenu');
     const onBodyClick = (e) => {
       if (
         (ref.current && ref.current.contains(e.target)) ||
-        e.target === hamburgerMenu
+        e.target === menuRef.current
       ) {
         return;
       }
@@ -29,7 +29,7 @@ const Navbar = () => {
         <Link to='/'>
           <img
             src='https://images.unsplash.com/photo-1609252871434-4e282b868d9a?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
-            alt='My Image'
+            alt='myimg'
           />
         </Link>
       </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
       </button>
       <div className='navbar__nav'>
         <ul
-          id='hamburgerMenu'
+          ref={menuRef}
           className={`${openHamburgerMenu ? 'open' : 'close'} `}
         >
           <li>
