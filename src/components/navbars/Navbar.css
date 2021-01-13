@@ -88,12 +88,12 @@
     justify-content: space-between;
     z-index: 1;
   }
-  .navbar .active {
+  .navbar .open {
     transform: translateX(0) !important;
     width: 50%;
     transition: transform 0.4s ease-in, width 0.1 s ease-in;
   }
-  .navbar .inactive {
+  .navbar .close {
     width: 0;
     transform: translateX(0%);
   }
