@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #09192f;
+  color: #c2ccec;
+}
+
+a {
+  font-family: 'Cutive Mono', monospace, sans-serif;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'open', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
 }
