@@ -9,7 +9,7 @@
 }
 
 .navbar__nav-number {
-  color: #56bfde;
+  color: var(--secondary-color);
   padding: 10px;
   font-weight: 600;
 }
@@ -27,24 +27,24 @@
 }
 
 .navbar__nav > ul li a {
-  color: #c2ccec;
+  color: var(--font-color);
   transition: color 0.2s ease-in;
   margin-left: 10px;
 }
 
 .navbar__nav-resume {
-  border: 2px solid #56bfde;
-  color: #56bfde !important;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color) !important;
   padding: 10px 18px;
   border-radius: 7px;
 }
 
 .navbar__nav-resume:hover {
-  background-color: #212f43;
+  background-color: var(--hover-color);
 }
 
 .navbar__nav > ul li a:hover {
-  color: #56bfde;
+  color: var(--secondary-color);
 }
 
 .navbar__nav > ul li {
@@ -58,8 +58,51 @@
 .navbar__hamburger {
   border: none;
   background-color: transparent;
-  color: #56bfde;
+  color: var(--secondary-color);
   display: none;
+}
+
+input[type='checkbox'].checkbox {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+}
+
+input[type='checkbox'].checkbox:checked + label {
+  left: 85px;
+  top: 25px;
+}
+
+input[type='checkbox'].checkbox:focus-visible {
+  outline: solid 2px white;
+}
+
+input[type='checkbox'].checkbox + label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 55px;
+  top: 25px;
+  background: #fff;
+  opacity: 1;
+  background-color: cyan;
+}
+
+.icon {
+  margin: 0px 10px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -73,10 +116,12 @@
     justify-content: space-around;
     align-items: flex-start;
     right: 0;
-    height: 100vh;
     top: 0;
+    height: 100vh;
+    width: 50%;
     font-size: 20px;
-    background-color: #162944;
+    background-color: var(--background-color-side-menu);
+    opacity: 0.8;
     transform: translateX(120px);
     transition: transform 0.4s ease-in, width 0.3s ease-in;
   }
@@ -88,13 +133,20 @@
     justify-content: space-between;
     z-index: 1;
   }
+
+  .navbar__nav > ul li a:hover {
+    color: var(--secondary-color);
+    padding: 10px;
+    border-bottom: 2px solid #f4f4f4;
+  }
   .navbar .open {
     transform: translateX(0) !important;
     width: 50%;
     transition: transform 0.4s ease-in, width 0.1 s ease-in;
   }
   .navbar .close {
+    overflow-x: hidden;
     width: 0;
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }

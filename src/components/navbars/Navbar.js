@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
+
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false);
   const ref = useRef();
   const menuRef = useRef();
@@ -26,12 +27,26 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='navbar__header'>
-        <Link to='/'>
-          <img
-            src='https://images.unsplash.com/photo-1609252871434-4e282b868d9a?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
-            alt='myimg'
+        <span className='icon' style={{ color: darkMode ? 'grey' : 'orange' }}>
+          ☀︎
+        </span>
+        <span className='toggle'>
+          <input
+            checked={darkMode}
+            onChange={() => setDarkMode((prevMode) => !prevMode)}
+            id='checkbox'
+            className='checkbox'
+            type='checkbox'
           />
-        </Link>
+          <label htmlFor='checkbox' />
+        </span>
+
+        <span
+          className='icon'
+          style={{ color: darkMode ? 'slateblue' : 'grey' }}
+        >
+          ☾
+        </span>
       </div>
       <button
         ref={ref}
