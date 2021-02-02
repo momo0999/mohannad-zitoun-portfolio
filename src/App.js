@@ -25,7 +25,7 @@ const App = () => {
     } else if (userPreferDark) {
       return true;
     } else {
-      return false;
+      return userPreferDark;
     }
   }
 

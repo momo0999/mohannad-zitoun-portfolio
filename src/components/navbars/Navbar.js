@@ -61,22 +61,22 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className={`${openHamburgerMenu ? 'open' : 'close'} `}
         >
           <li>
-            <Link to='/'>
+            <Link to='/' className='navbar__nav-link'>
               <span className='navbar__nav-number'>01.</span>Home
             </Link>
           </li>
           <li>
-            <Link to='/about'>
+            <Link to='/about' className='navbar__nav-link'>
               <span className='navbar__nav-number'>02.</span>About
             </Link>
           </li>
           <li>
-            <Link to='/projects'>
+            <Link to='/projects' className='navbar__nav-link'>
               <span className='navbar__nav-number'>03.</span>Projects
             </Link>
           </li>
           <li>
-            <Link to='/contact'>
+            <Link to='/contact' className='navbar__nav-link'>
               <span className='navbar__nav-number'>04.</span>Contact
             </Link>
           </li>

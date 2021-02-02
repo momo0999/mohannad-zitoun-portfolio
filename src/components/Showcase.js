@@ -18,12 +18,9 @@ const Showcase = () => {
           with beautiful interfaces and experiences.
         </p>
       </div>
-      <Link
-        className='showcase__contact-me'
-        to={{ pathname: 'mailto:mzitoun@hotmail.com' }}
-      >
+      <a className='showcase__contact-me' href='mailto:mzitoun@hotmail.com'>
         Contact Me
-      </Link>
+      </a>
     </div>
   );
 };
