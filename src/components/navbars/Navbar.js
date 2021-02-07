@@ -32,10 +32,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           ☀︎
         </span>
         <Switch
+          uncheckedIcon={false}
+          checkedIcon={false}
+          className='react-switch'
+          id='material-switch'
           offHandleColor='#fba501'
           onHandleColor='#6a5acd'
-          onColor='#fff'
-          offColor='#fff'
+          onColor='#bae67e'
+          offColor='#808080'
           disabled={false}
           checked={darkMode}
           onChange={() => setDarkMode((prevMode) => !prevMode)}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import myImage from '../image/myImage.png';
 import './About.css';
 
 const About = () => {
@@ -13,12 +13,22 @@ const About = () => {
       </div>
       <div className='about__aboutRow'>
         <div className='about__body'>
+          <p>Hey! I'm Mohannad, a full stack web developer based in Berlin.</p>
+          <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            saepe reprehenderit suscipit officiis nostrum perspiciatis aperiam
-            velit deserunt ad ipsa? Non est qui doloribus sequi distinctio?
-            Ducimus amet quas dicta odio recusandae? Fugiat atque obcaecati
-            autem dolor? At, facilis reprehenderit?
+            I enjoy creating websites, web applications, or anything in between.
+            My goal is to always build products that provide beautiful UI and
+            performant experiences. I have strong ability to adjust rapidly to
+            challenging situations and finding an appropriate solution for every
+            problem.
+          </p>
+          <br />
+          <p>
+            <strong className='about__body-photography'>
+              When I'm not in front of a computer screen
+            </strong>
+            , I'm probably walking around the city and making some street
+            photographs.
           </p>
           <br />
           <p>Here are the technologies I've been working with:</p>
@@ -39,10 +49,8 @@ const About = () => {
         </div>
         <div className='about__image'>
           <div className='about__image-imageBorder'></div>
-          <img
-            src='https://images.unsplash.com/photo-1500649297466-74794c70acfc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEyfHxwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
-            alt=''
-          />
+          <div className='about__image-imageLayer'></div>
+          <img src={myImage} alt='' />
         </div>
       </div>
     </div>
