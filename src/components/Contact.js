@@ -13,7 +13,7 @@ const Contact = () => {
         <br />
         <p className='contact__text-1'>
           I'm currently looking for new opportunities, my inbox is always open.
-          Whether you have a question or you want to say hi, I'will try my best
+          Whether you have a question or you want to say hi, I will try my best
           to get back to you!
         </p>
         <p className='contact__text-2'></p>
