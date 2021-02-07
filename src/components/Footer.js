@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Built by Mohannad Zitoun &copy; {new Date().getFullYear()}</p>
       </div>
       <div className='footer__icons'>
-        <a href='https://github.com/momo0999' target='_blank'>
+        <a href='https://github.com/momo0999' target='_blank' rel='noreferrer'>
           <i className='fab fa-github'></i>
         </a>
         <a href='https://www.linkedin.com' target='_blank' rel='noreferrer'>
