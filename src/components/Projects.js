@@ -7,7 +7,7 @@ const Projects = () => {
     <div className='projects'>
       <div className='projects__header'>
         <h1>
-          <span className='projects__header-num'>03.</span>My Projects
+          <span className='projects__header-num'>03.</span>Projects
         </h1>
         <div className='header-line'></div>
       </div>
