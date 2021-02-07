@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
   padding: 10px 30px;
   line-height: 1.3;
   opacity: 1;
@@ -78,7 +78,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .showcase {
     justify-content: flex-start;
     align-items: flex-start;

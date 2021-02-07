@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
+import Switch from 'react-switch';
 
 import './Navbar.css';
 
@@ -30,16 +31,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <span className='icon' style={{ color: darkMode ? 'grey' : 'orange' }}>
           ☀︎
         </span>
-        <span className='toggle'>
-          <input
-            checked={darkMode}
-            onChange={() => setDarkMode((prevMode) => !prevMode)}
-            id='checkbox'
-            className='checkbox'
-            type='checkbox'
-          />
-          <label htmlFor='checkbox' />
-        </span>
+        <Switch
+          offHandleColor='#fba501'
+          onHandleColor='#6a5acd'
+          onColor='#fff'
+          offColor='#fff'
+          disabled={false}
+          checked={darkMode}
+          onChange={() => setDarkMode((prevMode) => !prevMode)}
+        />
 
         <span
           className='icon'

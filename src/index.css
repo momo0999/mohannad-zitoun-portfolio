@@ -44,10 +44,14 @@ p {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 li {
   list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 h1 {
