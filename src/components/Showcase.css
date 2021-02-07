@@ -53,9 +53,6 @@
 
 .showcase__contact-me:hover {
   transform: scale(1.04);
-}
-
-.showcase__contact-me:hover {
   background-color: var(--hover-color);
 }
 
