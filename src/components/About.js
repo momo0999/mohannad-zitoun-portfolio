@@ -9,7 +9,7 @@ const About = () => {
         <h1>
           <span className='about__header-num'>02.</span>About
         </h1>
-        <div className='about__header-line'></div>
+        <div className='header-line'></div>
       </div>
       <div className='about__aboutRow'>
         <div className='about__body'>
@@ -50,7 +50,7 @@ const About = () => {
         <div className='about__image'>
           <div className='about__image-imageBorder'></div>
           <div className='about__image-imageLayer'></div>
-          <img src={myImage} alt='' />
+          <img src={myImage} alt='Mohannad Zitoun' />
         </div>
       </div>
     </div>

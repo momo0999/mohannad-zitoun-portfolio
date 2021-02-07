@@ -8,10 +8,10 @@ const Footer = () => {
         <p>Built by Mohannad Zitoun &copy; {new Date().getFullYear()}</p>
       </div>
       <div className='footer__icons'>
-        <a href='https://github.com/momo0999'>
+        <a href='https://github.com/momo0999' target='_blank'>
           <i className='fab fa-github'></i>
         </a>
-        <a href='#'>
+        <a href='#' target='_blank'>
           <i className='fab fa-linkedin'></i>
         </a>
       </div>

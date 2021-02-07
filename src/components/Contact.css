@@ -12,7 +12,7 @@
 .contact__question {
   color: var(--secondary-color);
   font-family: 'Cutive Mono', monospace, sans-serif;
-  text-align: left;
+  text-align: center;
   animation: slideInLeft 1.2s ease-in-out;
 }
 
@@ -57,11 +57,17 @@
   background-color: var(--hover-color);
 }
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-1500px);
+@media only screen and (max-width: 1024px) {
+  .contact__content {
+    max-width: 70%;
   }
-  to {
-    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact__content {
+    max-width: 100%;
+  }
+  .contact__question {
+    margin-top: 15px;
   }
 }
