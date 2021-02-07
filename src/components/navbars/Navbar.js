@@ -85,9 +85,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </Link>
           </li>
           <li>
-            <Link className='navbar__nav-resume' to='#'>
+            <a
+              className='navbar__nav-resume'
+              target='_blank'
+              href='https://drive.google.com/file/d/1cORMQFPDxhus0okCB2bF4cejwu4QzrMl/view?usp=sharing'
+            >
               Resume
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

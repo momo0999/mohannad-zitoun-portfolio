@@ -11,6 +11,7 @@
 
 .dark-mode {
   --background-color: #09192f;
+  --background-color-secondary: #112240;
   --background-color-side-menu: #162944;
   --font-color: #c2ccec;
   --font-color-title: #8892b0;
@@ -22,6 +23,7 @@
 .light-mode {
   --background-color: #fff;
   --background-color-side-menu: #fff;
+  --background-color-secondary: #fff;
   --font-color: #333;
   --font-color-title: #777;
   --hover-color: #f4f4f4;

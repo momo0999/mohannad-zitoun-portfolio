@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer__text {
+  max-width: 90%;
+}
+
+.footer .footer__text > p {
+  font-family: 'Cutive Mono', monospace, sans-serif;
+  text-align: center;
+}
+
+.footer .footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer .footer__icons i {
+  color: var(--font-color);
+  font-size: 25px;
+  transition: all 0.2s ease-in;
+  margin: 10px;
+}
+
+.footer .footer__icons i:hover {
+  transform: scale(1.1);
+  color: var(--secondary-color);
+}
