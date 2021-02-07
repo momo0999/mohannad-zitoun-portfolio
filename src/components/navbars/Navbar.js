@@ -87,6 +87,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <li>
             <a
               className='navbar__nav-resume'
+              rel='noreferrer'
               target='_blank'
               href='https://drive.google.com/file/d/1cORMQFPDxhus0okCB2bF4cejwu4QzrMl/view?usp=sharing'
             >

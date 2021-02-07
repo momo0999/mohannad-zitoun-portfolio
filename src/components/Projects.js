@@ -21,15 +21,17 @@ const Projects = () => {
             <p>Featured Project</p>
             <h1>Portfolio</h1>
             <div className='project__container-content__textBox'>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                dolore consequatur alias molestiae quasi earum dicta quia
-                veritatis exercitationem dignissimos?
-              </p>
+              <p>My portfolio website I built using HTML, CSS and React js</p>
             </div>
-            <a href='https://github.com/momo0999/mohannad-zitoun-portfolio'>
-              <i className='fab fa-github'></i>
-            </a>
+            <div className='projects__links'>
+              <a
+                rel='noreferrer'
+                target='_blank'
+                href='https://github.com/momo0999/mohannad-zitoun-portfolio'
+              >
+                <i className='fab fa-github'></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
