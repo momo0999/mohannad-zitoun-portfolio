@@ -198,4 +198,7 @@
   .projects .header-line {
     width: 100px;
   }
+  .projects__links > a {
+    padding: 20px;
+  }
 }
