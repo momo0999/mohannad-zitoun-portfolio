@@ -80,7 +80,7 @@
     overflow-x: hidden;
   }
   .navbar__nav > ul {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
