@@ -1,4 +1,5 @@
 import React from 'react';
+import Typical from 'react-typical';
 import './Contact.css';
 
 const Contact = () => {
@@ -6,7 +7,17 @@ const Contact = () => {
     <div className='contact'>
       <div className='contact__content'>
         <p className='contact__question'>
-          <span>04. </span>Have a question or want to work together?
+          <span>04. </span>
+          <Typical
+            loop={Infinity}
+            wrapper='b'
+            steps={[
+              'Hava a question?',
+              1000,
+              'or want to work together?',
+              1000,
+            ]}
+          />
         </p>
         <br />
         <h1>Get In Touch</h1>
