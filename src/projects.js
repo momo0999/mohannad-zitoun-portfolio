@@ -7,7 +7,7 @@ const projects = [
     img: projectPortfolio,
     githubLink: 'https://github.com/momo0999/mohannad-zitoun-portfolio',
     websiteLink: 'https://www.mohannadzitoun.com/',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+    technologies: ['HTML', 'Css', 'JavaScript', 'React'],
   },
   {
     name: 'Blog',
@@ -18,9 +18,10 @@ const projects = [
     websiteLink: 'https://mernstack-blog.herokuapp.com/',
     technologies: [
       'HTML',
-      'CSS',
+      'Css',
       'JavaScript',
       'React.js',
+      'Redux',
       'Node.js',
       'MongoDB',
     ],
