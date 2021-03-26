@@ -1,6 +1,6 @@
 # My portfolio
 
-> This is a [blog and photo gallery app](https://www.mohannadzitoun.com/ 'my portfolio') build with the MERN stack & Redux.
+> This is a [portfolio](https://www.mohannadzitoun.com/ 'my portfolio') build with React js.
 
 ![My Portfolio](./uploads/myportfolio.png)
 
