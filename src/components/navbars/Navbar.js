@@ -89,7 +89,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               className='navbar__nav-resume'
               rel='noreferrer'
               target='_blank'
-              href='https://drive.google.com/file/d/1FDXtlC6Icc3xEqWEW3acyqDszNqdzF-C/view?usp=sharing'
+              href='https://drive.google.com/file/d/1hN3MU3YknlBkLfdMcb__VBt-dQwFPjIg/view?usp=sharing'
             >
               Resume
             </a>
