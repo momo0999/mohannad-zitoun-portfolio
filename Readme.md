@@ -10,7 +10,7 @@
 - Responsive design.
 - Animation.
 
-## Install Dependencies (backend & client)
+## Install Dependencies (client)
 
 ```bash
 npm install
