@@ -10,7 +10,7 @@
 - Responsive design.
 - Animation.
 
-## Install Dependencies (client)
+## Install Dependencies (root)
 
 ```bash
 npm install
@@ -19,6 +19,6 @@ npm install
 ## Run
 
 ```
- # Run client (:3000)
+ # Run  (:3000)
  npm start
 ```
