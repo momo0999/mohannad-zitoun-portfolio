@@ -4,7 +4,7 @@ import './Projects.css';
 
 const Projects = () => {
   const renderedProjects = projects.map(
-    ({ name, img, desc, githubLink, websiteLink, technologies }) => {
+    ({ name, desc, githubLink, websiteLink, technologies }) => {
       return (
         <Fragment>
           <div className='project__card'>
